@@ -3,25 +3,22 @@ import React from "react";
 function Sidebar() {
   return (
     <div>
-      <form>
-        <button>Reset filters</button>
+      <form className = "sidebar">
+        <button> Reset filters </button>
 
-        <div className="line"> </div>
         <label>
-          {" "}
-          Price max
+          <h4>Price max</h4>
           <br />
           <input type="range" min={0} max="200" />
         </label>
-        <div className="line"> </div>
+
         <label>
-          {" "}
-          Brands
+          <h4>Brands</h4>
           <br />
           <input type="checkbox" />
         </label>
         <br />
-        <div className="line"> </div>
+
         <label>Colors</label>
       </form>
     </div>
